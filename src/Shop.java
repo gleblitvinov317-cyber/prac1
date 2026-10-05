@@ -6,14 +6,26 @@ public class Shop {
         computers.add(computer);
     }
     public void removeComputer(int index){
-        if (index < 0 || index >= computers.size()){
+        if (0 <= index && index < computers.size()){
             computers.remove(index);
         }
     }
-    public List<Computer> findComputer(String name, String cpu, int ram, int storage, int price){
+    public List<Computer> findComputer(FindComputer computer){
         List<Computer> result = new ArrayList<>();
         for(Computer c: computers){
-            if (c.getName().equalsIgnoreCase(name) && c.getName().equalsIgnoreCase(cpu) && c.getRam() == ram && c.getStorage() == storage && c.getPrice() == price){
+            boolean nameInSearch = false;
+            boolean cpuInSearch = false;
+            for(String i: computer.getName()){
+                if (c.getName().equalsIgnoreCase(i)){
+                    nameInSearch = true;
+                }
+            }
+            for(String i: computer.getCpu()){
+                if(c.getName().equalsIgnoreCase(i)){
+                    cpuInSearch = true;
+                }
+            }
+            if (nameInSearch && cpuInSearch && c.getRam() >= computer.getMinRam() && c.getRam() <= computer.getMaxRam() && c.getStorage() >= computer.getMinStorage() && c.getStorage() <= computer.getMaxStorage() && c.getPrice() >= computer.getMinPrice() && c.getPrice() <= computer.getMaxPrice()){
                 result.add(c);
             }
         }

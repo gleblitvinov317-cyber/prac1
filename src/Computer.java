@@ -24,6 +24,6 @@ public class Computer {
     }
     @Override
     public String toString(){
-        return "Computer{" + "name = " + name + "cpu = " + cpu + "ram = " + ram + "storage = " + storage + "price = " + price + "}";
+        return "Computer{" + "name = " + name + ", cpu = " + cpu + ", ram = " + ram + ", storage = " + storage + ", price = " + price + "}";
     }
 }
