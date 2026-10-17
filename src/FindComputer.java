@@ -7,7 +7,8 @@ public class FindComputer {
     private int maxStorage;
     private double minPrice;
     private double maxPrice;
-    public FindComputer(String[] name, String[] cpu, int minRam, int maxRam, int minStorage, int maxStorage, double minPrice, double maxPrice){
+
+    public FindComputer(String[] name, String[] cpu, int minRam, int maxRam, int minStorage, int maxStorage, double minPrice, double maxPrice) {
         this.name = name;
         this.cpu = cpu;
         this.minRam = minRam;
@@ -17,9 +18,12 @@ public class FindComputer {
         this.minPrice = minPrice;
         this.maxPrice = maxPrice;
     }
+
     public String[] getName(){return name;}
     public String[] getCpu(){return cpu;}
-    public int getMinRam(){return minRam;}
+    public int getMinRam() {
+        return minRam;
+    }
     public int getMaxRam(){return maxRam;}
     public int getMinStorage(){return minStorage;}
     public int getMaxStorage(){return maxStorage;}
