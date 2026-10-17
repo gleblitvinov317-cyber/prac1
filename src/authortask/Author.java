@@ -1,3 +1,4 @@
+package authortask;
 public class Author {
     private String name;
     private String email;

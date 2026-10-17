@@ -1,3 +1,5 @@
+package yeartime;
+
 public enum YearTime {
     SUMMER(25){
         @Override

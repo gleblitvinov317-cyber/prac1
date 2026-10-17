@@ -1,3 +1,5 @@
+package balltask;
+
 import java.util.Scanner;
 public class TestBall {
     public static void main(String[] args) {

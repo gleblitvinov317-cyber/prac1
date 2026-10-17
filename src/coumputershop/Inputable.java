@@ -1,3 +1,5 @@
+package coumputershop;
+
 public interface Inputable {
     Computer getComputer();
     FindComputer findComputer();

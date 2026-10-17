@@ -1,3 +1,5 @@
+package coumputershop;
+
 import java.util.Scanner;
 public class TestShop {
     public static void main(String[] args) {

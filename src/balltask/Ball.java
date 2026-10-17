@@ -1,3 +1,5 @@
+package balltask;
+
 public class Ball {
     double x;
     double y;
@@ -13,6 +15,6 @@ public class Ball {
     public void move (double xDisp, double yDisp) {this.x = this.x + xDisp; this.y = this.y + yDisp;}
     @Override
     public String toString(){
-        return "Ball{" + "x = " + x + "y = " + y;
+        return "balltask.Ball{" + "x = " + x + "y = " + y;
     }
 }

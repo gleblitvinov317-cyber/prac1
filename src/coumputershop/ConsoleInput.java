@@ -1,3 +1,5 @@
+package coumputershop;
+
 import java.util.Scanner;
 public class ConsoleInput implements Inputable {
     Scanner sc;

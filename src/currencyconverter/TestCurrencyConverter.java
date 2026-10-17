@@ -1,3 +1,5 @@
+package currencyconverter;
+
 import java.util.Scanner;
 public class TestCurrencyConverter {
     public static void main(String[] args){

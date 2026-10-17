@@ -1,3 +1,5 @@
+package coumputershop;
+
 public class Computer {
     private String name;
     private String cpu;
@@ -24,6 +26,6 @@ public class Computer {
     }
     @Override
     public String toString(){
-        return "Computer{" + "name = " + name + ", cpu = " + cpu + ", ram = " + ram + ", storage = " + storage + ", price = " + price + "}";
+        return "coumputershop.Computer{" + "name = " + name + ", cpu = " + cpu + ", ram = " + ram + ", storage = " + storage + ", price = " + price + "}";
     }
 }

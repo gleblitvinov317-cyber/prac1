@@ -1,3 +1,5 @@
+package authortask;
+
 import java.util.Scanner;
 public class TestAuthor {
     public static void main(String[] args){

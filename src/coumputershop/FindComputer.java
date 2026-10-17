@@ -1,3 +1,5 @@
+package coumputershop;
+
 public class FindComputer {
     private String[] name;
     private String[] cpu;

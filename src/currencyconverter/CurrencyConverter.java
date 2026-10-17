@@ -1,5 +1,6 @@
+package currencyconverter;
+
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 public class CurrencyConverter {
     private static final Map<String, Double> RATES = new HashMap<>();
